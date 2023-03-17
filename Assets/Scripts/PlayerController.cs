@@ -6,7 +6,8 @@ public class PlayerController : MonoBehaviour
 {
         float x;
         float y;
-    Rigidbody2D rb;
+        Rigidbody2D rb;
+    float speed = 4f;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -18,6 +19,6 @@ public class PlayerController : MonoBehaviour
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
 
-        rb.velocity = (new Vector2(x, y));
+        rb.velocity = (new Vector3(x * speed, y * speed,0));
     }
 }

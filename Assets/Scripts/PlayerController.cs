@@ -34,5 +34,6 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = (new Vector3(x * speed, y * speed,0));
     }
+  
 
 }

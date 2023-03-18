@@ -7,13 +7,13 @@ public class enemy : MonoBehaviour
     Rigidbody2D rb;
     float speed = 0f;
     [SerializeField]Transform Player;
-    [SerializeField] Collider2D Target;
+    //[SerializeField] Collider2D Target;
     private HealthSystem HealthSystem;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         HealthSystem = GetComponent<HealthSystem>();
-        Target = GetComponent<Collider2D>();
+        //Target = GetComponent<Collider2D>();
         
 }
     void Update()
@@ -35,19 +35,16 @@ public class enemy : MonoBehaviour
         }
     }
 
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Target != null)
+        if (collision.collider.CompareTag("Player"))
         {
-
-
             HealthSystem healthSystem = Player.GetComponent<HealthSystem>();
             healthSystem.Damage(1);
-
-
         }
     }
-    
-    
-    
+
+
+
 }

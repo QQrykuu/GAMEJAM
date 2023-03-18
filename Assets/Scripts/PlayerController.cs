@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     float y;
     Rigidbody2D rb;
     float speed = 4f;
+    [SerializeField]Transform visual;
    
 
     void Start()
@@ -24,11 +25,11 @@ public class PlayerController : MonoBehaviour
 
         if (x > 0)
         {
-            transform.localScale = Vector3.one;
+            visual.localScale = Vector3.one;
         }
         else if (x < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            visual.localScale = new Vector3(-1, 1, 1);
         }
 
         rb.velocity = (new Vector3(x * speed, y * speed,0));

@@ -5,16 +5,20 @@ using UnityEngine;
 public class Weapon : Coll_Objects
 {
     public int damage = 1;
-    public float pushForce = 0.5f;
-    public float cooldown = 0.5f;
+    public float pushForce = 1f;
+    public float cooldown = 0.75f;
     private float lastAttack;
     private Animator anim;
     private SpriteRenderer spriteRenderer;
+    [SerializeField] Transform Enemy;
+    private HealthSystem HealthSystem;
+    
     protected override void Start()
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        HealthSystem = Enemy.GetComponent<HealthSystem>();
     }
     
     protected override void Update()
@@ -32,27 +36,16 @@ public class Weapon : Coll_Objects
         }
     }
 
-    protected override void OnCollide(Collider2D coll)
-    {
-        if (coll.tag == "Enemy")
-        {
-            if(coll.name == "Player_plho")
-            {
-                return;
-            }
-            Damage dmg = new Damage
-            {
-                damaged = damage,
-                orign = transform.position,
-                knockback = pushForce,
-
-            };
-            coll.SendMessage("Damaged", dmg);
-        }
-    }
     private void Swing()
     {
         anim.SetTrigger("Swing");
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (Enemy != null)
+        {
+            HealthSystem healthSystem = Enemy.GetComponent<HealthSystem>();
+            healthSystem.Damage(1);  
+        }
+    }
 }

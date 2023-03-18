@@ -22,7 +22,7 @@ public class Healthbar : MonoBehaviour
         HealthSystem.OnHealed += HealthSystem_OnHealed;
         HealthSystem.OnHealthAmountMaxChanged += HealthSystem_OnHealthAmountMaxChanged;
 
-        UpdateHealthbar();        
+        UpdateHealthbar();
         UpdateBarVisible();
     }
     private void HealthSystem_OnHealed(object sender, System.EventArgs e)
@@ -35,16 +35,15 @@ public class Healthbar : MonoBehaviour
         UpdateHealthbar();
         UpdateBarVisible();
     }
-
     private void ConstructHealthBarSeparators()
     {
 
         Transform SeparatorTemplate = SeparatorContainer.Find("SeparatorTemplate");
         SeparatorTemplate.gameObject.SetActive(false);
 
-        foreach(Transform SeparatorTransform in SeparatorContainer)
+        foreach (Transform SeparatorTransform in SeparatorContainer)
         {
-            if(SeparatorTransform == SeparatorTemplate) continue;
+            if (SeparatorTransform == SeparatorTemplate) continue;
             {
                 Destroy(SeparatorTransform.gameObject);
             }
@@ -52,17 +51,17 @@ public class Healthbar : MonoBehaviour
 
         float HealthAmountPerSeparator = 10f;
         float barsize = 3f;
-        float BarOneHealthAmountSize = (barsize/HealthSystem.GetHealthAmountMax());
+        float BarOneHealthAmountSize = (barsize / HealthSystem.GetHealthAmountMax());
         int HealthSeparatorCount = Mathf.FloorToInt(HealthSystem.GetHealthAmountMax() / HealthAmountPerSeparator);
 
-        for(int i = 1; i < HealthSeparatorCount; i++)
+        for (int i = 1; i < HealthSeparatorCount; i++)
         {
             Transform SeparatorTransform = Instantiate(SeparatorTemplate, SeparatorContainer);
             SeparatorTransform.gameObject.SetActive(true);
             SeparatorTransform.localPosition = new Vector3(BarOneHealthAmountSize * i * HealthAmountPerSeparator, 0, 0);
         }
     }
-    
+
     private void HealthSystem_OnHealthAmountMaxChanged(object sender, System.EventArgs e)
     {
         ConstructHealthBarSeparators();
@@ -74,7 +73,7 @@ public class Healthbar : MonoBehaviour
 
     private void UpdateBarVisible()
     {
-        if(HealthSystem.IsFullHealth())
+        if (HealthSystem.IsFullHealth())
         {
             gameObject.SetActive(false);
         }

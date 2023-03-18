@@ -44,10 +44,10 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.013182507
+  m_TransitionDuration: 0.043051492
   m_TransitionOffset: 0.022159006
-  m_ExitTime: 0.011079499
-  m_HasExitTime: 1
+  m_ExitTime: 0.0110795
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -94,9 +94,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.17119604
-  m_TransitionOffset: 0.1450814
-  m_ExitTime: 0.61450815
+  m_TransitionDuration: 0.44820338
+  m_TransitionOffset: 2.610035
+  m_ExitTime: 0.9842506
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -110,7 +110,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Idle
-  m_Speed: 1
+  m_Speed: 10
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -7479789962097723841}

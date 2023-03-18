@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon : Coll_Objects
+public class Weapon : MonoBehaviour
 {
     public int damage = 1;
     public float pushForce = 1f;
@@ -13,17 +13,17 @@ public class Weapon : Coll_Objects
     [SerializeField] Transform Enemy;
     private HealthSystem HealthSystem;
     
-    protected override void Start()
+    protected  void Start()
     {
-        base.Start();
+        
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         HealthSystem = Enemy.GetComponent<HealthSystem>();
     }
     
-    protected override void Update()
+    protected void Update()
     {
-        base.Update();
+        
         if(Input.GetKey(KeyCode.Space))
         {
             
@@ -42,7 +42,7 @@ public class Weapon : Coll_Objects
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Enemy != null)
+        if (collision.collider.CompareTag("Enemy"))
         {
             HealthSystem healthSystem = Enemy.GetComponent<HealthSystem>();
             healthSystem.Damage(1);  

@@ -15,6 +15,16 @@ public class HealthSystem : MonoBehaviour
     {
         healthAmount = healthAmountMax;
     }
+    public void SetHealthAmountMax(float healthAmountMax, bool UpdateHealthAmount)
+    {
+        this.healthAmountMax = healthAmountMax;
+        if (UpdateHealthAmount)
+        {
+            healthAmount = healthAmountMax;
+        }
+
+        OnHealthAmountMaxChanged?.Invoke(this, EventArgs.Empty);
+    }
 
     public void Damage(int damageAmount)
     {
@@ -65,14 +75,5 @@ public class HealthSystem : MonoBehaviour
     {
         return (float)healthAmount / healthAmountMax;
     }
-    public void SetHealthAmountMax(float healthAmountMax, bool UpdateHealthAmount)
-    {
-        this.healthAmountMax = healthAmountMax;
-        if(UpdateHealthAmount)
-        {
-            healthAmount = healthAmountMax;
-        }
 
-        OnHealthAmountMaxChanged?.Invoke(this, EventArgs.Empty);
-    }
 }

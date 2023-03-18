@@ -2,24 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy : MonoBehaviour
+public class enemy : HealthSystem
 {
     Rigidbody2D rb;
-    float speed = 0f;
+    float speed = 1f;
     [SerializeField]Transform Player;
-    //[SerializeField] Collider2D Target;
     private HealthSystem HealthSystem;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         HealthSystem = GetComponent<HealthSystem>();
-        //Target = GetComponent<Collider2D>();
         
-}
-    void Update()
+      
+    }
+    void LateUpdate()
     {
         HandleMovement();
-        
+
     }
     private void HandleMovement()
     {
@@ -43,6 +42,15 @@ public class enemy : MonoBehaviour
             HealthSystem healthSystem = Player.GetComponent<HealthSystem>();
             healthSystem.Damage(1);
         }
+        if (healthAmount == 0)
+        {
+            Dead();
+        }
+
+    }
+    public void Dead()
+    {
+        //Destroy(gameObject);
     }
 
 

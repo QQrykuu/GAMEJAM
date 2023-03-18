@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
         float x;
         float y;
         Rigidbody2D rb;
-    float speed = 4f;
+        float speed = 4f;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

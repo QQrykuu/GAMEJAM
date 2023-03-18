@@ -134,7 +134,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,6 +142,27 @@ TextureImporter:
       bones: []
       spriteID: a520d98edf4a2b2468bd7dee5b5c47db
       internalID: -1346978732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_plho2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66b93f15a202674986e9ab14ad54b39
+      internalID: 153486571
       vertices: []
       indices: 
       edges: []
@@ -158,6 +179,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Floor_plho: 1794270161
+      Floor_plho2: 153486571
       Player_plho: -1346978732
   spritePackingTag: 
   pSDRemoveMatte: 0

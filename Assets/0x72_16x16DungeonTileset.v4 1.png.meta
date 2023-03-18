@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dcb154c2989296b4d84f876163bacb64
+guid: b4b344e8b678cd7469c72e9efcfd5524
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,49 +105,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Floor_plho
+      name: Grass1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 144
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abb1cea6227e204439074b9d6fcdb681
-      internalID: 1794270161
+      spriteID: 59ec4b8841065b841996287347597449
+      internalID: -1239767964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_plho
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a520d98edf4a2b2468bd7dee5b5c47db
-      internalID: -1346978732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor_plho2
+      name: grass2
       rect:
         serializedVersion: 2
         x: 32
@@ -161,8 +140,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b66b93f15a202674986e9ab14ad54b39
-      internalID: 153486571
+      spriteID: 8624272a702c1324984ab71a305f1a42
+      internalID: -463127679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0x72_16x16DungeonTileset.v4 1_0
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04cf2f059ae0ff459a5a664a73dc690
+      internalID: 16291994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99107ebedfbab684f9bf81b93c9bb83d
+      internalID: -459261864
       vertices: []
       indices: 
       edges: []
@@ -178,9 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Floor_plho: 1794270161
-      Floor_plho2: 153486571
-      Player_plho: -1346978732
+      0x72_16x16DungeonTileset.v4 1_0: -700629927
+      Grass1: -691629574
+      grass2: -565992291
+      farmer: -1277263032
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

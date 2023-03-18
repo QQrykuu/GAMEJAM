@@ -22,11 +22,11 @@ public class Weapon : Coll_Objects
         base.Update();
         if(Input.GetKey(KeyCode.Space))
         {
-            Debug.Log("space");
+            
             if(Time.time - lastAttack > cooldown)
             {
                 lastAttack = Time.time;
-                Debug.Log("now");
+                
                 Swing();
             }
         }

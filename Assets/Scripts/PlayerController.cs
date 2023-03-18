@@ -4,20 +4,32 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-        float x;
-        float y;
-        Rigidbody2D rb;
-        float speed = 4f;
+    float x;
+    float y;
+    Rigidbody2D rb;
+    float speed = 4f;
+   
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
+
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
+
+        if (x > 0)
+        {
+            transform.localScale = Vector3.one;
+        }
+        else if (x < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
 
         rb.velocity = (new Vector3(x * speed, y * speed,0));
     }

@@ -470,7 +470,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -478,6 +478,69 @@ TextureImporter:
       bones: []
       spriteID: a25e20bc6195ba147bbf162501302155
       internalID: 1239073383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0x72_16x16DungeonTileset.v4 1_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 225
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c28453bdd6ee54ea679d8588d2130c
+      internalID: -610025634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0x72_16x16DungeonTileset.v4 1_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 225
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f45e12df2aa1624f99f7b807611ce1c
+      internalID: 2082985148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0x72_16x16DungeonTileset.v4 1_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d481dff133793084b899c43ba79c89e8
+      internalID: 223809983
       vertices: []
       indices: 
       edges: []
@@ -500,6 +563,7 @@ TextureImporter:
       Weapon1: -1153090770
       grass2: -565992291
       Grass12: 1731808683
+      0x72_16x16DungeonTileset.v4 1_2: 2082985148
       Grass3: 260984951
       Grass6: 148384926
       Grass13: -1309690175
@@ -509,8 +573,10 @@ TextureImporter:
       Enemy_plho: 1239073383
       Grass10: 1363566309
       farmer: -1277263032
+      0x72_16x16DungeonTileset.v4 1_1: -610025634
       Sand1: -2146670705
       Grass5: 1331477221
+      0x72_16x16DungeonTileset.v4 1_3: 223809983
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

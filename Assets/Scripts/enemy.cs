@@ -4,45 +4,38 @@ using UnityEngine;
 
 public class enemy : HealthSystem
 {
-    Rigidbody2D rb;
     float speed = 1f;
-    [SerializeField]Transform Player;
-    private HealthSystem HealthSystem;
+    Transform Player;
+
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        HealthSystem = GetComponent<HealthSystem>();
-        
-      
-    }
-    void LateUpdate()
-    {
-        HandleMovement();
 
-    }
-    private void HandleMovement()
-    {
-        if(Player != null)
+        if(GameObject.FindGameObjectWithTag("Player"))
         {
-            Vector3 moveDir = (Player.position - transform.position).normalized;
-
-            rb.velocity = moveDir*speed;
+            Player = GameObject.FindWithTag("Player").transform;
         }
-        else
+
+    }
+    void Update()
+    {
+        if (Player != null)
         {
-            rb.velocity = Vector2.zero;
+            transform.position = Vector3.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
+
+
         }
     }
-
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        var thishs = this.GetComponent<HealthSystem>();
         if (collision.collider.CompareTag("Player"))
         {
-            HealthSystem healthSystem = Player.GetComponent<HealthSystem>();
-            healthSystem.Damage(1);
+            HealthSystem hs = Player.GetComponent<HealthSystem>();
+            hs.Damage(1);
+            thishs.Damage(1);
         }
-        if (healthAmount == 0)
+        if (thishs.healthAmount == 0)
         {
             Dead();
         }
@@ -50,8 +43,9 @@ public class enemy : HealthSystem
     }
     public void Dead()
     {
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
+
 
 
 

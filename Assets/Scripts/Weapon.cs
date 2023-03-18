@@ -10,15 +10,11 @@ public class Weapon : MonoBehaviour
     private float lastAttack;
     private Animator anim;
     private SpriteRenderer spriteRenderer;
-    [SerializeField] Transform Enemy;
-    private HealthSystem HealthSystem;
     
     protected  void Start()
     {
-        
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        HealthSystem = Enemy.GetComponent<HealthSystem>();
     }
     
     protected void Update()
@@ -44,8 +40,12 @@ public class Weapon : MonoBehaviour
     {
         if (collision.collider.CompareTag("Enemy"))
         {
-            HealthSystem healthSystem = Enemy.GetComponent<HealthSystem>();
-            healthSystem.Damage(1);  
+            HealthSystem hs = collision.gameObject.GetComponent<HealthSystem>();
+            hs.Damage(1);
+            if (hs.healthAmount == 0)
+            {
+                collision.gameObject.GetComponent<enemy>().Dead();
+            }
         }
     }
 }

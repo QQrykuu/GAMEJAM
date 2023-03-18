@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2744316655727785895}
   - component: {fileID: 2744316655727785893}
   - component: {fileID: 2744316655727785894}
+  - component: {fileID: 1897736674133766539}
   m_Layer: 0
   m_Name: Weapon1
   m_TagString: Untagged
@@ -132,6 +133,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1897736674133766539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2744316655727785897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11820b359b57e6c4d83119c6dd962a80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  damage: 1
+  pushForce: 0.5
+  cooldown: 0.5
 --- !u!1 &2744316655866256546
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,19 +16,22 @@ public class Weapon : Coll_Objects
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
-
+    
     protected override void Update()
     {
         base.Update();
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKey(KeyCode.Space))
         {
+            Debug.Log("space");
             if(Time.time - lastAttack > cooldown)
             {
                 lastAttack = Time.time;
+                Debug.Log("now");
                 Swing();
             }
         }
     }
+
     protected override void OnCollide(Collider2D coll)
     {
         if (coll.tag == "Enemy")

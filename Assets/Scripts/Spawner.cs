@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField]private Transform[] spawnpoints;
-    [SerializeField]private GameObject enemiesPref;
+    [SerializeField]private GameObject[] enemiesPref;
     [SerializeField]private float betweenSpawn = 5f;
     void Start()
     {
@@ -17,10 +17,11 @@ public class Spawner : MonoBehaviour
     {
 
     }
-    private IEnumerator spawnEnemies(float interval,GameObject enemy)
+    private IEnumerator spawnEnemies(float interval,GameObject[] enemies)
     {
         yield return new WaitForSeconds(interval);
-        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-5f, 5), Random.Range(-5f, 5), 0), Quaternion.identity);
-        StartCoroutine(spawnEnemies(interval, enemy));
+        var enemy = enemies[Random.Range(0, enemiesPref.Length)];
+        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(gameObject.transform.position.x - 20f, gameObject.transform.position.x + 20f), Random.Range(gameObject.transform.position.y - 2f, gameObject.transform.position.y + 5f)), Quaternion.identity);
+        StartCoroutine(spawnEnemies(interval, enemies));
     }
 }

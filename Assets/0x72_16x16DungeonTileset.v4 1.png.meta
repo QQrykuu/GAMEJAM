@@ -462,13 +462,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_plho
+      name: Slime_small
       rect:
         serializedVersion: 2
-        x: 48
+        x: 50
         y: 16
-        width: 16
-        height: 16
+        width: 12
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1268,7 +1268,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1289,7 +1289,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1310,7 +1310,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1331,7 +1331,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1339,6 +1339,216 @@ TextureImporter:
       bones: []
       spriteID: 187022a634feef74c96d683d75d3fff8
       internalID: 1843266357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_potion_small
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 33
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68151d69145b695428a769af91306efc
+      internalID: -1614307372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_potion_big
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 65
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36858cb06b41d7e45b49deadec85ba83
+      internalID: -1966440602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_big
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 16
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04885123e3248c439c3575cb4f0fefc
+      internalID: 96429073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 48
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49453088486b84449c8b493f394b6b4
+      internalID: 1224530720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 63
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4220acabbc8f8374f8a8d9c49e99f888
+      internalID: 957639941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28e600b0de658d4381cbc5aa4524f80
+      internalID: -432515078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 80
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df77f67ed6b8b6545a983286ad363b12
+      internalID: -2045874857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 48
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4adf2504ffd22c43af752ffdb774d06
+      internalID: -1295173032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 48
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a033c818e3cd74bb139d212c862e14
+      internalID: -2043035451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d4af5e56b373d4ca04dd2e8f374bfb
+      internalID: 2074231479
       vertices: []
       indices: 
       edges: []
@@ -1358,15 +1568,20 @@ TextureImporter:
       0x72_16x16DungeonTileset.v4 1_0: -700629927
       Grass4: 53239903
       Wheat2: 370517350
+      Health_potion_big: -1966440602
       Wheat3: 671783537
       Grass9: -1141431528
       Grass16: 233444645
       Hoe: -1153090770
+      Ogre: -1295173032
       Grass17: 1843266357
+      Berserk: -432515078
       Potato1: -1903756340
+      Monster: -2045874857
       Grass12: 1731808683
       Shovel: -1372045707
       0x72_16x16DungeonTileset.v4 1_2: 1030261748
+      Boss2: 2074231479
       Wall_MD: 2082985148
       Wall_RG: -171309483
       Coin: -1609681750
@@ -1377,7 +1592,6 @@ TextureImporter:
       Edge: -415729820
       Dead_sprite: 1062916798
       Grass11: 1756465066
-      Enemy_plho: 1239073383
       Grass15: -127990788
       Sand1: -2146670705
       Carrot2: 1699296095
@@ -1385,9 +1599,12 @@ TextureImporter:
       Grass5: 1331477221
       Farmland: 1518713687
       Wheat1: 411228544
+      Demon: 957639941
       Wheat_icon: 241375977
       Floor_bare: 719048793
+      Golem: 1224530720
       Sand2: 923166576
+      Health_potion_small: -1614307372
       Grass1: -691629574
       Wall_LD: 223809983
       Wall_MG: 886287019
@@ -1402,12 +1619,15 @@ TextureImporter:
       Potato2: 1263845343
       Grass3: 260984951
       Collumn_6: 550423050
+      Slime_big: 96429073
       Pitchfork: -1775549372
+      Boss1: -2043035451
       Collumn_3: -1194073416
       Sand3: -1749248949
       Grass7: 1959407973
       Grass8: -1462879766
       Carrot_icon: -1236046619
+      Slime_small: 1239073383
       Axe: -405513920
       Grass10: 1363566309
       farmer: -1277263032

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class enemy : HealthSystem
 {
-    float speed = 1f;
+    [SerializeField]float speed = 1f;
     Transform Player;
+    [SerializeField] int dmg;
     
     [SerializeField] private GameObject dead;
     void Start()
@@ -33,7 +34,7 @@ public class enemy : HealthSystem
         if (collision.collider.CompareTag("Player"))
         {
             HealthSystem hs = Player.GetComponent<HealthSystem>();
-            hs.Damage(1);
+            hs.Damage(dmg);
             thishs.Damage(1);
         }
         if (thishs.healthAmount == 0)

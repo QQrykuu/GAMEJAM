@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField]private Transform[] spawnpoints;
     [SerializeField]private GameObject enemiesPref;
-    [SerializeField] private float betweenSpawn = 5f;
+    [SerializeField]private float betweenSpawn = 5f;
     void Start()
     {
         StartCoroutine(spawnEnemies(betweenSpawn, enemiesPref));
@@ -15,15 +15,7 @@ public class Spawner : MonoBehaviour
     
     void Update()
     {
-        //int rEnemy = Random.Range(0, enemiesPref.Length);
-        //int rSpawnPoint = Random.Range(0, spawnpoints.Length);
-        /*  if(Input.GetKeyDown(KeyCode.B))
-          {
 
-
-              Instantiate(enemiesPref[rEnemy], spawnpoints[rSpawnPoint].position, transform.rotation);
-          }
-        */
     }
     private IEnumerator spawnEnemies(float interval,GameObject enemy)
     {

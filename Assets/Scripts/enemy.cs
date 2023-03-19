@@ -6,7 +6,8 @@ public class enemy : HealthSystem
 {
     float speed = 1f;
     Transform Player;
-
+    
+    [SerializeField] private GameObject dead;
     void Start()
     {
 
@@ -43,6 +44,7 @@ public class enemy : HealthSystem
     }
     public void Dead()
     {
+        GameObject deadEnemy = Instantiate(dead, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y), Quaternion.identity);
         Destroy(gameObject);
     }
 

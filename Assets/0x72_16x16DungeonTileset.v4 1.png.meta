@@ -785,7 +785,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -793,6 +793,27 @@ TextureImporter:
       bones: []
       spriteID: 9eb77ff08a529ef409da5b891d4d6695
       internalID: -415729820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead_sprite
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d075413bf1cc48c40944fa778ef43b50
+      internalID: 1062916798
       vertices: []
       indices: 
       edges: []
@@ -837,6 +858,7 @@ TextureImporter:
       Sand3: -1749248949
       Grass10: 1363566309
       farmer: -1277263032
+      Dead_sprite: 1062916798
       Sand1: -2146670705
       Wall_LG: 2080724202
       Grass5: 1331477221

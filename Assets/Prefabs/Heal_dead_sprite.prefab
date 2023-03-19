@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3021336999686823827}
   - component: {fileID: 6005123684524041061}
   m_Layer: 0
-  m_Name: Dead_sprite
+  m_Name: Heal_dead_sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1062916798, guid: b4b344e8b678cd7469c72e9efcfd5524, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7830189, g: 0.03754288, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -102,6 +102,8 @@ MonoBehaviour:
   potions:
   - {fileID: 3888621403863778155, guid: b9aebadf81db7e344b194fc4944a50e0, type: 3}
   - {fileID: 4329698515331261179, guid: cbec39263efed5445b1ad7b8e621c4f0, type: 3}
+  - {fileID: 3888621403863778155, guid: b9aebadf81db7e344b194fc4944a50e0, type: 3}
+  - {fileID: 2040896581104431691, guid: bff9aa611b5824b438f914821c16905f, type: 3}
 --- !u!61 &6005123684524041061
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -461,7 +461,7 @@ MonoBehaviour:
   healthAmount: 0
   speed: 1.75
   dmg: 1
-  dead: {fileID: 3021336999686823826, guid: 5154f48185a8403408862d3dfbe67a89, type: 3}
+  dead: {fileID: 1124426518263581226, guid: 27ed593f8b75cf840b3582dcacb78954, type: 3}
 --- !u!50 &7020951330705229403
 Rigidbody2D:
   serializedVersion: 4

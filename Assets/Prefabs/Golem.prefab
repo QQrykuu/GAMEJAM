@@ -118,7 +118,7 @@ MonoBehaviour:
   healthAmount: 0
   speed: 1
   dmg: 1
-  dead: {fileID: 3021336999686823826, guid: 5154f48185a8403408862d3dfbe67a89, type: 3}
+  dead: {fileID: 1124426518263581226, guid: 27ed593f8b75cf840b3582dcacb78954, type: 3}
 --- !u!61 &8477959649329737547
 BoxCollider2D:
   m_ObjectHideFlags: 0

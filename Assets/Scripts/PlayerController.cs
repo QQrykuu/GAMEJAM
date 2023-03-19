@@ -23,15 +23,6 @@ public class PlayerController : MonoBehaviour
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
 
-        if (x > 0)
-        {
-            visual.localScale = Vector3.one;
-        }
-        else if (x < 0)
-        {
-            visual.localScale = new Vector3(-1, 1, 1);
-        }
-
         rb.velocity = (new Vector3(x * speed, y * speed,0));
     }
   

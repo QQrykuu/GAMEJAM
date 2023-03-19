@@ -7,34 +7,38 @@ public class Weapon : MonoBehaviour
     public int damage = 1;
     public float pushForce = 1f;
     public float cooldown = 0.75f;
-    private float lastAttack;
+    private bool lastAttack;
+    Transform Player;
     private Animator anim;
     private SpriteRenderer spriteRenderer;
     
     protected  void Start()
     {
+        if(GameObject.FindGameObjectWithTag("Player"))
+        {
+            Player = GameObject.FindGameObjectWithTag("Player").transform;
+        }
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
     
     protected void Update()
     {
-        
-        if(Input.GetKey(KeyCode.Space))
-        {
-            
-            if(Time.time - lastAttack > cooldown)
-            {
-                lastAttack = Time.time;
-                
-                Swing();
-            }
+        if(Input.GetKey(KeyCode.Mouse0))
+        {        
+            Swing();
         }
     }
 
     private void Swing()
     {
+        if(lastAttack)
+        {
+            return;
+        }
         anim.SetTrigger("Swing");
+        lastAttack = true;
+        StartCoroutine(Cooldown());
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -47,5 +51,10 @@ public class Weapon : MonoBehaviour
                 collision.gameObject.GetComponent<enemy>().Dead();
             }
         }
+    }
+    private IEnumerator Cooldown()
+    {
+        yield return new WaitForSeconds(cooldown);
+        lastAttack = false;
     }
 }

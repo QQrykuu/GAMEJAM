@@ -12,7 +12,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - Farmland
   - 
   - 
   - 
@@ -50,4 +50,7 @@ TagManager:
     locked: 0
   - name: Characters
     uniqueID: 669623035
+    locked: 0
+  - name: ui
+    uniqueID: 3895228533
     locked: 0

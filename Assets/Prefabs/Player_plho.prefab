@@ -215,7 +215,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 1.375}
+    oldSize: {x: 0.625, y: 1.5}
     newSize: {x: 0.5, y: 1.375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -259,7 +259,6 @@ MonoBehaviour:
   damage: 1
   pushForce: 0.5
   cooldown: 0.5
-  Enemy: {fileID: 0}
 --- !u!1 &7858802816750512225
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +383,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 669623035
       objectReference: {fileID: 0}
+    - target: {fileID: 4018984113688785425, guid: d7e4ff2dcd64aae49a04e445d675c409, type: 3}
+      propertyPath: HealthSystem
+      value: 
+      objectReference: {fileID: 1681210696466718562}
     - target: {fileID: 4305234088401174878, guid: d7e4ff2dcd64aae49a04e445d675c409, type: 3}
       propertyPath: m_SortingLayer
       value: 3

@@ -184,6 +184,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 669623035
       objectReference: {fileID: 0}
+    - target: {fileID: 4018984113688785425, guid: d7e4ff2dcd64aae49a04e445d675c409, type: 3}
+      propertyPath: HealthSystem
+      value: 
+      objectReference: {fileID: 7803538790297134350}
     - target: {fileID: 4305234088401174878, guid: d7e4ff2dcd64aae49a04e445d675c409, type: 3}
       propertyPath: m_SortingLayer
       value: 3

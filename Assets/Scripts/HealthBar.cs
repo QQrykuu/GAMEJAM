@@ -16,7 +16,7 @@ public class Healthbar : MonoBehaviour
     private void Start()
     {
         SeparatorContainer = transform.Find("SeparatorContainer");
-        ConstructHealthBarSeparators();
+        //ConstructHealthBarSeparators();
 
         HealthSystem.OnDamaged += HealthSystem_OnDamaged;
         HealthSystem.OnHealed += HealthSystem_OnHealed;
@@ -37,9 +37,9 @@ public class Healthbar : MonoBehaviour
     }
     private void ConstructHealthBarSeparators()
     {
-
         Transform SeparatorTemplate = SeparatorContainer.Find("SeparatorTemplate");
         SeparatorTemplate.gameObject.SetActive(false);
+        
 
         foreach (Transform SeparatorTransform in SeparatorContainer)
         {
@@ -49,8 +49,8 @@ public class Healthbar : MonoBehaviour
             }
         }
 
-        float HealthAmountPerSeparator = 10f;
-        float barsize = 3f;
+        float HealthAmountPerSeparator = 1f;
+        float barsize = 1f;
         float BarOneHealthAmountSize = (barsize / HealthSystem.GetHealthAmountMax());
         int HealthSeparatorCount = Mathf.FloorToInt(HealthSystem.GetHealthAmountMax() / HealthAmountPerSeparator);
 

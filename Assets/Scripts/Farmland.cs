@@ -8,7 +8,6 @@ public class Farmland : MonoBehaviour
 {
 [SerializeField] SpriteRenderer tilled;
 [SerializeField] SpriteRenderer crop;
-
 [SerializeField] Sprite[] Potato;
 [SerializeField] Sprite[] Carrot;
 [SerializeField] Sprite[] Wheat;
@@ -16,7 +15,7 @@ public class Farmland : MonoBehaviour
 [SerializeField] GameObject TillUI;
 [SerializeField] Button TillButton;
 [SerializeField] GameObject PlantUI;
-
+[SerializeField] Transform InventoryUI;
 [SerializeField] Button PButton;
 [SerializeField] Button CButton;
 [SerializeField] Button WButton;
@@ -169,10 +168,43 @@ public CropType SetCrop;
         Debug.Log(timer);
         if(SetCrop != CropType.Nothing && timer <= 0)
         {
-            SetCrop = CropType.Nothing;
-            crop.enabled = false;
+            switch(SetCrop)
+            {
+                case(CropType.Potato):
+                    if(InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Potato, 1))
+                    {
+                        SetCrop = CropType.Nothing;
+                        crop.enabled = false;
+                    }
+                    else
+                    {
+                        Debug.Log("inventory full");
+                    }
+                break;
+                case(CropType.Wheat):
+                    if(InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Wheat, 1))
+                    {
+                        SetCrop = CropType.Nothing;
+                        crop.enabled = false;
+                    }
+                    else
+                    {
+                        Debug.Log("inventory full");
+                    }
+                break;
+                case(CropType.Carrot):
+                    if(InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Carrot, 1))
+                    {
+                        SetCrop = CropType.Nothing;
+                        crop.enabled = false;
+                    }
+                    else
+                    {
+                        Debug.Log("inventory full");
+                    }
+                break;
 
-            //add reward
+            }
         }
     }
 }

@@ -37,7 +37,7 @@ public enum ItemType {Coin, Wheat, Potato, Carrot}
     {
         if(amount > 0)
         {
-            switch(item)
+        switch(item)
             {
                 case(ItemType.Coin):
                 {
@@ -93,8 +93,67 @@ public enum ItemType {Coin, Wheat, Potato, Carrot}
         }
         else
         {
-            UpdateUI();
-            return false;
+            switch(item)
+            {
+                case(ItemType.Coin):
+                {
+                    if(CoinAmount+amount >= 0)
+                    {
+                        CoinAmount += amount;
+                        UpdateUI();
+                        return true;
+                    }
+                    else
+                    {
+                        UpdateUI();
+                        return false;
+                    }
+                }
+                case(ItemType.Wheat):
+                {
+                    if(WheatAmount+amount >= 0)
+                    {
+                        WheatAmount += amount;
+                        UpdateUI();
+                        return true;
+                    }
+                    else
+                    {
+                        UpdateUI();
+                        return false;
+                    }
+                }
+                case(ItemType.Carrot):
+                {
+                    if(CarrotAmount+amount >= 0)
+                    {
+                        CarrotAmount += amount;
+                        UpdateUI();
+                        return true;
+                    }
+                    else
+                    {
+                        UpdateUI();
+                        return false;
+                    }
+                }
+                case(ItemType.Potato):
+                {
+                    if(PotatoAmount+amount >= 0)
+                    {
+                        PotatoAmount += amount;
+                        UpdateUI();
+                        return true;
+                    }
+                    else
+                    {
+                        UpdateUI();
+                        return false;
+                    }
+                }
+            }
+        UpdateUI();
+        return false;
         }
 
     }

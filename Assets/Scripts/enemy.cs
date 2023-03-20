@@ -11,6 +11,8 @@ public class enemy : HealthSystem
     [SerializeField] private GameObject dead;
 
     private Transform visual;
+    bool boss;
+    
     void Start()
     {
         visual = transform.Find("Visual");
@@ -61,6 +63,7 @@ public class enemy : HealthSystem
     public void Dead()
     {
         GameObject deadEnemy = Instantiate(dead, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y), Quaternion.identity);
+        
         Destroy(gameObject);
     }
 

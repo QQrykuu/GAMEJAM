@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] private float speed;
     private float timer;
+    [SerializeField] float accuracy;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,13 +16,13 @@ public class Projectile : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player");
 
         Vector3 dir = Player.transform.position - transform.position;
-        rb.velocity = new Vector2(dir.x, dir.y).normalized * speed;
+        rb.velocity = new Vector2(Random.Range(-accuracy,accuracy) + dir.x, Random.Range(-accuracy, accuracy) + dir.y).normalized * speed;
 
         float rot = Mathf.Atan2(-dir.y, -dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rot);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         timer += Time.deltaTime;

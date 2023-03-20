@@ -102,8 +102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f967f55875e71a4399edda7eb1efea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 5165733806313301590, guid: d6e0810d3f3a361468d216f70e87fb70, type: 3}
+  projectile: {fileID: 5165733806313301590, guid: 268811153255c0a418269ed39fc46ae5, type: 3}
   projectilePos: {fileID: 1458205071702941929}
+  burst: 0
 --- !u!114 &1937902636619433328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,7 +238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555570024090773262, guid: d7e4ff2dcd64aae49a04e445d675c409, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.36
+      value: -0.36
       objectReference: {fileID: 0}
     - target: {fileID: 7555570024090773262, guid: d7e4ff2dcd64aae49a04e445d675c409, type: 3}
       propertyPath: m_LocalScale.y

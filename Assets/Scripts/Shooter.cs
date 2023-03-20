@@ -8,6 +8,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] private Transform projectilePos;
     private GameObject Player;
     private float timer;
+    [SerializeField] int burst;
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -18,8 +19,8 @@ public class Shooter : MonoBehaviour
     {
 
         float distance = Vector2.Distance(transform.position, Player.transform.position);
-        Debug.Log(distance);
-        if (distance < 15)
+        
+        if (distance < 8)
         {
             timer += Time.deltaTime;
             if (timer > 2)
@@ -33,6 +34,19 @@ public class Shooter : MonoBehaviour
     }
     void Shoot()
     {
-        Instantiate(projectile, projectilePos.position, Quaternion.identity);
+        if (burst == 0)
+        {
+            Instantiate(projectile, projectilePos.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("BBBBBBBBBBBB");
+            for(int i = 0; i == burst; i++)
+            {
+                Instantiate(projectile, projectilePos.position, Quaternion.identity);
+                Debug.Log("AAAAAAAAAAAA");
+            }
+
+        }
     }
 }

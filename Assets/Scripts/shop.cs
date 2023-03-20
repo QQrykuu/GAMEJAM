@@ -34,6 +34,7 @@ bool ShopOpened = false;
         if(Input.GetKey(KeyCode.Escape))
         {
             ShopOpened = false;
+            updateUI();
         }
     }
 

@@ -7,6 +7,7 @@ public class DeadEnemy : MonoBehaviour
     [SerializeField] private float deadTime;
     [SerializeField] private GameObject[] potions;
     private GameObject currentPotion;
+    [SerializeField] private bool dropAll;
 
     int index;
     void Start()
@@ -22,6 +23,7 @@ public class DeadEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if (collision.gameObject.CompareTag("Player"))
         {
             PickUp();
@@ -35,9 +37,20 @@ public class DeadEnemy : MonoBehaviour
     }
     private void PickUp()
     {
-        index = Random.Range(0, potions.Length);
-        currentPotion = potions[index];
-        GameObject newPotions = Instantiate(currentPotion, new Vector3(Random.Range(gameObject.transform.position.x - 1f, gameObject.transform.position.x + 1f), Random.Range(gameObject.transform.position.y - 1f, gameObject.transform.position.y + 1f)), Quaternion.identity);
+        if (!dropAll)
+        {
+            index = Random.Range(0, potions.Length);
+            currentPotion = potions[index];
+            GameObject newPotions = Instantiate(currentPotion, new Vector3(Random.Range(gameObject.transform.position.x - 2f, gameObject.transform.position.x + 2f), Random.Range(gameObject.transform.position.y - 1f, gameObject.transform.position.y + 1f)), Quaternion.identity);
+        }
+        else
+        {
+            foreach(GameObject drop in potions)
+            {
+                GameObject newPotions = Instantiate(drop, new Vector3(Random.Range(gameObject.transform.position.x - 2f, gameObject.transform.position.x + 2f), Random.Range(gameObject.transform.position.y - 1f, gameObject.transform.position.y + 1f)), Quaternion.identity);
+            }
+        }
+        
     }
 
 }

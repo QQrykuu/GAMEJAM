@@ -83,11 +83,14 @@ public CropType SetCrop;
 
     void TillFarmland()
     {
-        //add cost
-        IsTilled = true;
-        tilled.enabled = true;
-        TillUI.SetActive(false);
-        PlantUI.SetActive(true);//might be a problem
+        if(InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Coin, -2))
+        {
+            IsTilled = true;
+            tilled.enabled = true;
+            TillUI.SetActive(false);
+            PlantUI.SetActive(true);//might be a problem            
+        }
+
     }
 
     public void PlantCrop(CropType select)
@@ -102,24 +105,44 @@ public CropType SetCrop;
             switch(SetCrop)
             {
                 case(CropType.Potato):
-                    crop.enabled = true;
-                    crop.sprite = Potato[0];
-                    SetCrop = CropType.Potato;
+                    if(InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Coin, -0))
+                    {
+                        crop.enabled = true;
+                        crop.sprite = Potato[0];
+                        SetCrop = CropType.Potato;
+                                    timer = timerMax;
+                    }
+                    else{
+                        SetCrop = CropType.Nothing;
+                    }
                 break;
                 case(CropType.Carrot):
-                    crop.enabled = true;
-                    crop.sprite = Carrot[0];
-                    SetCrop = CropType.Carrot;
+                    if(InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Coin, -3))
+                    {
+                        crop.enabled = true;
+                        crop.sprite = Carrot[0];
+                        SetCrop = CropType.Carrot;
+                                    timer = timerMax;
+                    }
+                    else{
+                        SetCrop = CropType.Nothing;
+                    }
                 break;
                 case(CropType.Wheat):
-                    crop.enabled = true;
-                    crop.sprite = Wheat[0];
-                    SetCrop = CropType.Wheat;                    
+                    if(InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Coin, -5))
+                    {
+                        crop.enabled = true;
+                        crop.sprite = Wheat[0];
+                        SetCrop = CropType.Wheat; 
+                                    timer = timerMax;
+                    }    
+                    else{
+                        SetCrop = CropType.Nothing;
+                    }               
                 break;
 
             }
 
-            timer = timerMax;
         }
     }
 

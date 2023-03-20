@@ -9,8 +9,11 @@ public class enemy : HealthSystem
     [SerializeField] int dmg;
     
     [SerializeField] private GameObject dead;
+
+    private Transform visual;
     void Start()
     {
+        visual = transform.Find("Visual");
 
         if(GameObject.FindGameObjectWithTag("Player"))
         {
@@ -26,12 +29,24 @@ public class enemy : HealthSystem
 
 
         }
+
+        Vector2 scale = visual.localScale;
+        if (Player.position.x > transform.position.x)
+        {
+            scale.x = -1;
+
+        }
+        else
+        {
+            scale.x = 1f;
+        }
+        visual.localScale = scale;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         var thishs = this.GetComponent<HealthSystem>();
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.collider.CompareTag("Player"))
         {
             HealthSystem hs = Player.GetComponent<HealthSystem>();
             hs.Damage(dmg);

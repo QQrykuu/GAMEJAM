@@ -21,15 +21,21 @@ public class ShopUI : MonoBehaviour
     {
         if(InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Wheat, -1))
         {
-            InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Coin, 1);
+            InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Coin, 5);
         }
     }
     void SC()
     {
-        
+        if(InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Carrot, -1))
+        {
+            InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Coin, 3);
+        }
     }
     void SP()
     {
-        
+        if(InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Potato, -1))
+        {
+            InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Coin, 1);
+        }       
     }
 }

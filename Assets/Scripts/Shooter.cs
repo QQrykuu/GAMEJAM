@@ -40,11 +40,9 @@ public class Shooter : MonoBehaviour
         }
         else
         {
-            Debug.Log("BBBBBBBBBBBB");
-            for(int i = 0; i == burst; i++)
+            for(int i = 0; i <= burst; i++)
             {
                 Instantiate(projectile, projectilePos.position, Quaternion.identity);
-                Debug.Log("AAAAAAAAAAAA");
             }
 
         }

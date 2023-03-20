@@ -6,7 +6,7 @@ using TMPro;
 public class Inventory : MonoBehaviour
 {
 
-int CoinAmount = 0;
+int CoinAmount = 4;
 int WheatAmount = 0;
 int MaxWheatAmount = 20;
 int PotatoAmount = 0;

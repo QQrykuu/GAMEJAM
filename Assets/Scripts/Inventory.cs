@@ -8,11 +8,11 @@ public class Inventory : MonoBehaviour
 
 int CoinAmount = 4;
 int WheatAmount = 0;
-int MaxWheatAmount = 20;
+public int MaxWheatAmount = 20;
 int PotatoAmount = 0;
-int MaxPotatoAmount = 20;
+public int MaxPotatoAmount = 20;
 int CarrotAmount = 0;
-int MaxCarrotAmount = 20;
+public int MaxCarrotAmount = 20;
 
 public enum ItemType {Coin, Wheat, Potato, Carrot}
 

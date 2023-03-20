@@ -34,7 +34,7 @@ public class Spawner : MonoBehaviour
             if (enemiesSpawned < AmountOfEnemies)
             {
                 var enemy = enemies[Random.Range(0, enemiesPref.Length)];
-                GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-5f, 5) + transform.position.x, Random.Range(-5f, 5) + transform.position.y, 0), Quaternion.identity);
+                GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-2f, 2) + transform.position.x, Random.Range(-2f, 2) + transform.position.y, 0), Quaternion.identity);
 
             }
             StartCoroutine(spawnEnemies(interval, enemies, Bosses));
@@ -44,7 +44,7 @@ public class Spawner : MonoBehaviour
                 enemiesSpawned = 0;
                 var bosses = Bosses[Random.Range(0, Boss.Length)];
 
-                GameObject newBoss = Instantiate(bosses, new Vector3(Random.Range(-5f, 5) + transform.position.x, Random.Range(-5f, 5) + transform.position.y, 0), Quaternion.identity);
+                GameObject newBoss = Instantiate(bosses, new Vector3(Random.Range(-2f, 2) + transform.position.x, Random.Range(-2f, 2) + transform.position.y, 0), Quaternion.identity);
                 Destroy(gameObject);
             }
         

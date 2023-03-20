@@ -7,13 +7,15 @@ public class PlayerController : MonoBehaviour
     float x;
     float y;
     Rigidbody2D rb;
-    float speed = 4f;
+    public float PlayerSpeed = 4f;
     [SerializeField]Transform visual;
    
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Time.timeScale = 1;
+        Debug.Log(Time.timeScale);
     }
 
     
@@ -23,7 +25,7 @@ public class PlayerController : MonoBehaviour
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
 
-        rb.velocity = (new Vector3(x * speed, y * speed,0));
+        rb.velocity = (new Vector3(x * PlayerSpeed, y * PlayerSpeed,0));
     }
   
 

@@ -19,7 +19,7 @@ public class Farmland : MonoBehaviour
 [SerializeField] Button PButton;
 [SerializeField] Button CButton;
 [SerializeField] Button WButton;
-float timerMax = 30f;
+float timerMax = 60f;
 float timer = 0;   
 int stage =0;
 public enum CropType {Nothing, Potato, Carrot, Wheat}
@@ -44,7 +44,7 @@ public CropType SetCrop;
         if(timer > 0)
         {
             timer -= Time.deltaTime;
-            if(timer < 30 && timer > 15)
+            if(timer < 60 && timer > 30)
             {
                 stage = 0;
             }
@@ -117,7 +117,7 @@ public CropType SetCrop;
                     }
                 break;
                 case(CropType.Carrot):
-                    if(InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Coin, -3))
+                    if(InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Coin, -1))
                     {
                         crop.enabled = true;
                         crop.sprite = Carrot[0];
@@ -129,7 +129,7 @@ public CropType SetCrop;
                     }
                 break;
                 case(CropType.Wheat):
-                    if(InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Coin, -5))
+                    if(InventoryUI.GetComponent<Inventory>().ModifyAmount(Inventory.ItemType.Coin, -2))
                     {
                         crop.enabled = true;
                         crop.sprite = Wheat[0];

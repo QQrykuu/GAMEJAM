@@ -826,8 +826,8 @@ TextureImporter:
         y: 193
         width: 10
         height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.51029664, y: 0.070900984}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -847,8 +847,8 @@ TextureImporter:
         y: 193
         width: 9
         height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.44278464, y: 0.07982605}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -868,8 +868,8 @@ TextureImporter:
         y: 225
         width: 12
         height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49277624, y: 0.06313599}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -889,8 +889,8 @@ TextureImporter:
         y: 193
         width: 10
         height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.48970032, y: 0.0914978}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1940,7 +1940,7 @@ TextureImporter:
         width: 13
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1961,7 +1961,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2003,7 +2003,7 @@ TextureImporter:
         width: 12
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2011,6 +2011,27 @@ TextureImporter:
       bones: []
       spriteID: db5a96a621e805b4aa1fa6078d4bf252
       internalID: 1382077241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SuperCrystal
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 144
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d72e8d4c56f1e4d9b46a3ce4226055
+      internalID: -378171903
       vertices: []
       indices: 
       edges: []
@@ -2051,15 +2072,15 @@ TextureImporter:
       Elf2: 2119438980
       Sand1: -2146670705
       Carrot2: 1699296095
-      Demon: 957639941
       Wall_LG: 2080724202
       Grass5: 1331477221
+      Elf1: 149523244
       WoodenFloor: 398008402
       Wizard2: 489654992
-      Elf1: 149523244
       Storefront: -1892618482
-      Wheat_icon: 241375977
       Wheat1: 411228544
+      Wheat_icon: 241375977
+      Demon: 957639941
       Grass1: -691629574
       Wall_LD: 223809983
       Wall_MG: 886287019
@@ -2117,6 +2138,7 @@ TextureImporter:
       Axe: -405513920
       Bow: 13998847
       Soil2: 870819779
+      SuperCrystal: -378171903
       TopWall6: 838762270
   spritePackingTag: 
   pSDRemoveMatte: 0

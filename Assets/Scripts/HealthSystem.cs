@@ -9,7 +9,7 @@ public class HealthSystem : MonoBehaviour
     public event EventHandler OnDamaged;
     public event EventHandler OnHealed;    
     public event EventHandler OnDied;
-    [SerializeField]private float healthAmountMax;
+    [SerializeField]public float healthAmountMax;
     public float healthAmount;
     private void Awake()
     {

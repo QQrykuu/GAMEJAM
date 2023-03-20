@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b903c2eebc756c419703919b3c9e130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthAmountMax: 35
+  healthAmountMax: 80
   healthAmount: 0
 --- !u!114 &5158439173691572352
 MonoBehaviour:
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthAmountMax: 0
   healthAmount: 0
-  speed: 1.5
+  speed: 0.7
   dmg: 2
   dead: {fileID: 303582037208855938, guid: cfe99af8d84ae274b89b3b4b68fc96cf, type: 3}
 --- !u!114 &5158439173691572383
@@ -129,10 +129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f967f55875e71a4399edda7eb1efea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 5165733806313301590, guid: d6e0810d3f3a361468d216f70e87fb70, type: 3}
+  projectile: {fileID: 5165733806313301590, guid: ad250c2b30db4f94b85ca3245282549b, type: 3}
   projectilePos: {fileID: 5158439174930825162}
   delay: 7
-  burst: 5
+  burst: 20
 --- !u!1 &5158439174835513081
 GameObject:
   m_ObjectHideFlags: 0

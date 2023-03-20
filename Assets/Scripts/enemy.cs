@@ -28,10 +28,10 @@ public class enemy : HealthSystem
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         var thishs = this.GetComponent<HealthSystem>();
-        if (collision.collider.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             HealthSystem hs = Player.GetComponent<HealthSystem>();
             hs.Damage(dmg);

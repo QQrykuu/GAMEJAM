@@ -40,9 +40,9 @@ public class Weapon : MonoBehaviour
         lastAttack = true;
         StartCoroutine(Cooldown());
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.collider.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             HealthSystem hs = collision.gameObject.GetComponent<HealthSystem>();
             hs.Damage(1);

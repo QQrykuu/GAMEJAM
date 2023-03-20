@@ -444,12 +444,12 @@ TextureImporter:
       name: Hoe
       rect:
         serializedVersion: 2
-        x: 116
+        x: 196
         y: 193
         width: 10
         height: 24
       alignment: 9
-      pivot: {x: 0.40380248, y: 0.11311722}
+      pivot: {x: 0.40380707, y: 0.051664352}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -822,7 +822,7 @@ TextureImporter:
       name: Pitchfork
       rect:
         serializedVersion: 2
-        x: 131
+        x: 211
         y: 193
         width: 10
         height: 30
@@ -843,7 +843,7 @@ TextureImporter:
       name: Axe
       rect:
         serializedVersion: 2
-        x: 148
+        x: 228
         y: 193
         width: 9
         height: 25
@@ -864,7 +864,7 @@ TextureImporter:
       name: Super axe
       rect:
         serializedVersion: 2
-        x: 145
+        x: 225
         y: 225
         width: 12
         height: 25
@@ -885,7 +885,7 @@ TextureImporter:
       name: Shovel
       rect:
         serializedVersion: 2
-        x: 163
+        x: 243
         y: 193
         width: 10
         height: 30
@@ -1553,6 +1553,384 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: WoodenFloor
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce7af59f63ebfd4aaeee7e7d8804219
+      internalID: 398008402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopWall1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d85498c23f228498a1e7485698549a
+      internalID: 812694189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopWall2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f26a1d0ea9e1a14195a5969873ee00a
+      internalID: 660934991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopWall3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44af0312353160e449154da5e9e2440d
+      internalID: 1045646653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopWall5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5adea3712088554aa2b733182d81b82
+      internalID: -1437505982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopWall6
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bec235116896f944b88015efa38e32d
+      internalID: 838762270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopWall7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5675a61aa124add44803a7e9f17af5c2
+      internalID: 631607200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopWall8
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66bed4bf9ee69fc4da40827bfd1f5205
+      internalID: 1742501729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopWall9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0505537154c3b2c4ea61dda84d450f42
+      internalID: -1169739481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoorFrame1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfe2a91c9b2c8e4eb8a93b99262b5d7
+      internalID: 1865539828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoorFrame2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669b2bd752ca4854b91fc2c5f6dc3b23
+      internalID: -762156053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40580b7e587967c44adab7d26e258c0b
+      internalID: -635387549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Storefront
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187a01ce81e29ac4a972cb51108a5e48
+      internalID: -1892618482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shopkeeper
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 16
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f593b204afbb844d8e61898ac85bdd2
+      internalID: -1746949530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 214314b39edf2344ea048cab7d10cc94
+      internalID: -1225289182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3fafee9fc6db144945e8100874e09c
+      internalID: 489654992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elf1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fd696699a3ecb4b9eaa2db214cb791
+      internalID: 149523244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elf2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887c7b8f828427e449f1c89c0c18b964
+      internalID: 2119438980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1564,76 +1942,94 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Carrot1: 1225410835
       0x72_16x16DungeonTileset.v4 1_0: -700629927
-      Grass4: 53239903
       Wheat2: 370517350
       Health_potion_big: -1966440602
       Wheat3: 671783537
-      Grass9: -1141431528
       Grass16: 233444645
-      Hoe: -1153090770
-      Ogre: -1295173032
       Grass17: 1843266357
-      Berserk: -432515078
-      Potato1: -1903756340
+      DoorFrame2: -762156053
+      Boss2: 2074231479
       Monster: -2045874857
       Grass12: 1731808683
       Shovel: -1372045707
-      0x72_16x16DungeonTileset.v4 1_2: 1030261748
-      Boss2: 2074231479
-      Wall_MD: 2082985148
       Wall_RG: -171309483
       Coin: -1609681750
-      Wall_RD: -610025634
+      TopWall9: -1169739481
       Grass6: 148384926
       Grass13: -1309690175
       Collumn_1: -1562143851
-      Edge: -415729820
+      TopWall3: 1045646653
+      TopWall8: 1742501729
       Dead_sprite: 1062916798
       Grass11: 1756465066
-      Grass15: -127990788
+      Elf2: 2119438980
       Sand1: -2146670705
       Carrot2: 1699296095
       Wall_LG: 2080724202
       Grass5: 1331477221
-      Farmland: 1518713687
+      Elf1: 149523244
       Wheat1: 411228544
+      Wizard2: 489654992
+      WoodenFloor: 398008402
       Demon: 957639941
       Wheat_icon: 241375977
-      Floor_bare: 719048793
-      Golem: 1224530720
-      Sand2: 923166576
-      Health_potion_small: -1614307372
+      Storefront: -1892618482
       Grass1: -691629574
       Wall_LD: 223809983
       Wall_MG: 886287019
       Carrot3: -837941447
       Collumn_5: -111476829
-      grass2: -565992291
-      Soil1: -1691726767
+      TopWall7: 631607200
       Collumn_2: 1132516519
       Grass14: -711176187
-      Super axe: 1583552782
-      Potato_icon: 184000835
       Potato2: 1263845343
       Grass3: 260984951
-      Collumn_6: 550423050
       Slime_big: 96429073
+      Collumn_3: -1194073416
+      TopWall1: 812694189
+      Grass7: 1959407973
+      Grass10: 1363566309
+      farmer: -1277263032
+      Potato3: 411228544
+      DoorFrame1: 1865539828
+      Collumn_4: 1240451607
+      Carrot1: 1225410835
+      Grass4: 53239903
+      Grass9: -1141431528
+      Hoe: -1153090770
+      Ogre: -1295173032
+      Berserk: -432515078
+      Door: -635387549
+      Potato1: -1903756340
+      TopWall2: 660934991
+      0x72_16x16DungeonTileset.v4 1_2: 1030261748
+      Wizard1: -1225289182
+      Wall_MD: 2082985148
+      Wall_RD: -610025634
+      Edge: -415729820
+      TopWall5: -1437505982
+      Grass15: -127990788
+      Shopkeeper: -1746949530
+      Farmland: 1518713687
+      Floor_bare: 719048793
+      Golem: 1224530720
+      Sand2: 923166576
+      Health_potion_small: -1614307372
+      grass2: -565992291
+      Soil1: -1691726767
+      Super axe: 1583552782
+      Potato_icon: 184000835
+      Collumn_6: 550423050
       Pitchfork: -1775549372
       Boss1: -2043035451
-      Collumn_3: -1194073416
       Sand3: -1749248949
-      Grass7: 1959407973
       Grass8: -1462879766
       Carrot_icon: -1236046619
       Slime_small: 1239073383
       Axe: -405513920
-      Grass10: 1363566309
-      farmer: -1277263032
-      Potato3: 411228544
       Soil2: 870819779
-      Collumn_4: 1240451607
+      TopWall6: 838762270
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

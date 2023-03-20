@@ -8,6 +8,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] private Transform projectilePos;
     private GameObject Player;
     private float timer;
+    [SerializeField] float delay;
     [SerializeField] int burst;
     void Start()
     {
@@ -23,7 +24,7 @@ public class Shooter : MonoBehaviour
         if (distance < 8)
         {
             timer += Time.deltaTime;
-            if (timer > 2)
+            if (timer > delay)
             {
                 timer = 0;
                 Shoot();

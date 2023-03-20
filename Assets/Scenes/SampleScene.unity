@@ -2022,7 +2022,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.2784314, g: 0.6156863, b: 0.3019608, a: 0}
+  m_BackGroundColor: {r: 0.2784314, g: 0.27450982, b: 0.2784314, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -24561,14 +24561,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2775105696225691822, guid: b60e76152247111449eefc18f6af5443, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -399738763
+      objectReference: {fileID: 0}
+    - target: {fileID: 7423891376403061822, guid: b60e76152247111449eefc18f6af5443, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8066464378912050233, guid: b60e76152247111449eefc18f6af5443, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 1934185984}
     - target: {fileID: 8066464378912050233, guid: b60e76152247111449eefc18f6af5443, type: 3}
+      propertyPath: OpenCost
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066464378912050233, guid: b60e76152247111449eefc18f6af5443, type: 3}
       propertyPath: unlocked
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8066464378912050233, guid: b60e76152247111449eefc18f6af5443, type: 3}
+      propertyPath: InventoryUI
+      value: 
+      objectReference: {fileID: 1398960314}
     - target: {fileID: 8066464378912050234, guid: b60e76152247111449eefc18f6af5443, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -25168,11 +25184,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1045321468971607538, guid: 98b70e752b19ae74b84a2035f5b93a0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.440001
+      value: -15.809999
       objectReference: {fileID: 0}
     - target: {fileID: 1045321468971607538, guid: 98b70e752b19ae74b84a2035f5b93a0f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.69
+      value: 10.559999
       objectReference: {fileID: 0}
     - target: {fileID: 1045321468971607538, guid: 98b70e752b19ae74b84a2035f5b93a0f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25214,6 +25230,26 @@ PrefabInstance:
       propertyPath: AmountOfEnemies
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1045321468971607549, guid: 98b70e752b19ae74b84a2035f5b93a0f, type: 3}
+      propertyPath: Boss.Array.data[0]
+      value: 
+      objectReference: {fileID: 2040896581104431691, guid: bff9aa611b5824b438f914821c16905f, type: 3}
+    - target: {fileID: 1045321468971607549, guid: 98b70e752b19ae74b84a2035f5b93a0f, type: 3}
+      propertyPath: enemiesPref.Array.data[1]
+      value: 
+      objectReference: {fileID: 3317177338255722424, guid: 268240df29421854c81302ea5c4623e9, type: 3}
+    - target: {fileID: 1045321468971607549, guid: 98b70e752b19ae74b84a2035f5b93a0f, type: 3}
+      propertyPath: enemiesPref.Array.data[2]
+      value: 
+      objectReference: {fileID: 7803538790297134384, guid: c6c200bf93799044f91fad8cebf595d7, type: 3}
+    - target: {fileID: 1045321468971607549, guid: 98b70e752b19ae74b84a2035f5b93a0f, type: 3}
+      propertyPath: enemiesPref.Array.data[3]
+      value: 
+      objectReference: {fileID: 3317177338255722424, guid: 268240df29421854c81302ea5c4623e9, type: 3}
+    - target: {fileID: 1045321468971607549, guid: 98b70e752b19ae74b84a2035f5b93a0f, type: 3}
+      propertyPath: enemiesPref.Array.data[4]
+      value: 
+      objectReference: {fileID: 3317177338255722424, guid: 268240df29421854c81302ea5c4623e9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98b70e752b19ae74b84a2035f5b93a0f, type: 3}
 --- !u!114 &6821960907816625142
@@ -25267,6 +25303,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1934185984}
+    - target: {fileID: 8066464378912050233, guid: b60e76152247111449eefc18f6af5443, type: 3}
+      propertyPath: InventoryUI
+      value: 
+      objectReference: {fileID: 1398960314}
     - target: {fileID: 8066464378912050234, guid: b60e76152247111449eefc18f6af5443, type: 3}
       propertyPath: m_RootOrder
       value: 3

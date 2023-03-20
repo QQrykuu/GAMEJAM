@@ -7,7 +7,7 @@ using TMPro;
 public class Door : MonoBehaviour
 {
 [SerializeField]Transform Player;
-[SerializeField]Transform DoorControl;
+[SerializeField] public Transform DoorControl;
 [SerializeField]Transform CostUI;
 [SerializeField] int OpenCost;
 [SerializeField] Button Unlock;
@@ -24,6 +24,7 @@ public bool unlocked;
     }
     void Update()
     {
+        
         if(unlocked)
         {
             if(Player !=null)
